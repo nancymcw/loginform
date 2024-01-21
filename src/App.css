@@ -1,38 +1,71 @@
-.App {
+/*Had fun styling this with resources I got from Michael in a mentor meeting a while back, for the box-shadow and input box details especially!*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #bf6bee;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+a {
+  color: #bf6bee;
+  text-decoration: none;
+  text-transform: lowercase;
+}
+a:hover {
+  color: #555555;
+}
+.navBar {
+  width: 100vw;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border-radius: 0px;
+  background: #ede3f3;
+  font-size: 2rem;
+}
+.login {
+  width: 500px;
+  border-radius: 20px;
+  background: #ede3f3;
   text-align: center;
+  padding: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.login label.text {
+  font-size: 0.75rem;
+  color: #bf6bee;
+  position: relative;
+  top: 0.25rem;
+  margin: 0 0 0 7px;
+  padding: 0 3px;
+  width: fit-content;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.login input[type="text"].input {
+  padding: 11px 10px;
+  font-size: 1rem;
+  border: 2px #bf6bee solid;
+  border-radius: 5px;
+  background: #e8e8e8;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.login input[type="password"].input {
+  padding: 11px 10px;
+  font-size: 1rem;
+  border: 2px #bf6bee solid;
+  border-radius: 5px;
+  background: #e8e8e8;
+}
+h3 {
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+ul {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
 }
-
-.App-link {
-  color: #61dafb;
+li {
+  list-style-type: none;
+  padding: 10px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn {
+  color: #bf6bee;
 }
